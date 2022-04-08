@@ -3,7 +3,6 @@ import {Link,Redirect} from "react-router-dom";
 import {connect} from "react-redux";
 import {login,loadUser} from '../../actions/auth';
 import PropTypes from 'prop-types';
-import { LOGIN_FAIL } from '../../actions/types';
 
 const Login = ({login, isAuthenticated}) => {
 
