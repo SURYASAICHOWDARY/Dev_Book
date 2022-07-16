@@ -13,13 +13,13 @@ const User = require('../../models/User');
 // @desc     Register user
 // @access   Public
 router.post(
-  '/',[
+  '/',
   check('name', 'Name is required').notEmpty(),
   check('email', 'Please include a valid email').isEmail(),
   check(
     'password',
     'Please enter a password with 6 or more characters'
-  ).isLength({ min: 6 })],
+  ).isLength({ min: 6 }),
   async (req, res) => {
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
@@ -37,13 +37,16 @@ router.post(
           .json({ errors: [{ msg: 'User already exists' }] });
       }
 
-      const avatar =gravatar.url(email, {
+      const avatar = normalize(
+        gravatar.url(email, {
           s: '200',
           r: 'pg',
           d: 'mm'
-        });
-        
-       user = new User({
+        }),
+        { forceHttps: true }
+      );
+
+      user = new User({
         name,
         email,
         avatar,

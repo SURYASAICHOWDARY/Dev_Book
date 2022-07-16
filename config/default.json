@@ -1,6 +1,0 @@
-{
-    "mongoURI": "mongodb+srv://SuryaSai_Chowdary:mongo143@cluster0.duves.mongodb.net/devconnectDB",
-    "jwtSecret": "this is a secret message",
-    "githubClientSecret": "8e39be05045e6113418cae34f8a2769aec3305f4",
-    "githubClientId": "Iv1.782dcd20ad8e52f5"
-}
