@@ -1,5 +1,5 @@
 {
-  "name": "dev_connector",
+  "name": "dev_book",
   "version": "1.0.0",
   "description": "social media for developers",
   "main": "server.js",
@@ -9,7 +9,7 @@
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
-  "author": "surya sai chowdary",
+  "author": "CH G Surya Sai Chowdary & Rasagna Moparthi",
   "license": "MIT",
   "dependencies": {
     "axios": "^0.27.2",
