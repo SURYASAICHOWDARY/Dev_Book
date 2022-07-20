@@ -22,7 +22,8 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.12.10",
     "react-router-dom": "^6.3.0",
-    "request": "^2.88.2"
+    "request": "^2.88.2",
+    "npm": "8.14.0"
   },
   "devDependencies": {
     "@types/config": "^0.0.41",
